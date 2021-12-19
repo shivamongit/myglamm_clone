@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hairProduct.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="imgDetail">
+
+        <div id="slide">
+            <div id="top"> <img height="22px" width="22px"
+                    src="https://img.icons8.com/ios-filled/2x/collapse-arrow.png"></img> </div>
+            <div id="display"></div>
+            <div id="bottom"> <img height="22px" width="22px"
+                    src="https://img.icons8.com/ios-filled/2x/expand-arrow.png"></img> </div>
+        </div>
+
+        <div id="img"></div>
+
+        <div id="info">
+
+            <div id="main">
+                <div id="name"></div>
+                <div class="lit"></div>
+                <div id="icon">
+                    <div>
+                        <h3>4.9</h3>
+                    </div><br>
+
+                    <div id="star"><img id="star"
+                            src="data:image/jpeg;base64,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">
+                    </div>
+
+                    <div></div>
+                    <h4> | 4082 ratings</h4>
+                </div>
+
+            </div>
+
+            <div id="price"></div>
+            <div id="pt">(MRP incl. of all taxes)</div>
+
+
+            <div class="shade">
+                <div class="lit">Shade | </div>
+
+
+                <select id="select" name="choice">
+                    <option value="first">Lovebomb</option>
+                    <option value="second">DM slid</option>
+                    <option value="third">Swinger</option>
+                    <option value="fourth">Submarining</option>
+                    <option value="fifth">Cuffing</option>
+                    <option value="sixth">Ship</option>
+                    <option value="seventh">Darking</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div id="colorbar">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/02-lovebomb.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/dm-slide-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/swinger-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUBMARINING_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/15-cuffing.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/ship-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUGAR-MAMA_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/rbomb-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Homebody1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Hits-Different.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0017-Insta-Baddie.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0018-Hot-girl-summer.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0025-Fetish1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0006-Realness1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0001-Vogueing.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0031-based1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0002-wL-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0007-R.E.M-1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/cu-46-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/03-catfish.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0015-JOMO.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0014-IMO-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0029-Buss-it.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0027-dope1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/INSTAGRANDSTANDING-8.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/06-thirst-trap.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/02-lovebomb.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/dm-slide-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/swinger-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUBMARINING_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/15-cuffing.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/ship-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUGAR-MAMA_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/rbomb-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Homebody1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Hits-Different.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0017-Insta-Baddie.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0018-Hot-girl-summer.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0025-Fetish1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0006-Realness1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0001-Vogueing.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0031-based1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0002-wL-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0007-R.E.M-1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/cu-46-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/03-catfish.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0015-JOMO.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0014-IMO-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0029-Buss-it.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0027-dope1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/INSTAGRANDSTANDING-8.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/06-thirst-trap.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUGAR-MAMA_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/rbomb-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Homebody1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0019-Hits-Different.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/booty-call-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0017-Insta-Baddie.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0018-Hot-girl-summer.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0025-Fetish1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/-0006-Realness1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0001-Vogueing.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0031-based1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0002-wL-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0007-R.E.M-1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/cu-46-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/03-catfish.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0015-JOMO.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0014-IMO-1.jpg">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0029-Buss-it.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/-0027-dope1.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/site-images/original/INSTAGRANDSTANDING-8.jpg">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/06-thirst-trap.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/02-lovebomb.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/dm-slide-1.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/swinger-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUBMARINING_5.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/15-cuffing.png">
+                <img height="50px" width="50px"
+                    src="https://files.myglamm.com/images/attribute_set/original/ship-1.png">
+                <img height="50px" width="50px" src="https://files.myglamm.com/site-images/original/SUGAR-MAMA_5.png">
+
+            </div>
+            <br>
+            <br>
+            <button class="bag">ADD TO BAG</button>
+            <br>
+            <br>
+            <div class="cashback">
+                <p>You will receive <b>cashback worth ₹50</b> as myglammPOINTS on this purchase</p>
+            </div>
+
+            <br>
+            <hr>
+            <img style="width:200px;" src="https://www.myglamm.com/images/exclusive_offers.svg">
+            <br>
+            <img id="per" src="https://files.myglamm.com/site-images/original/offer-2.png">
+            <h4>Get 25% cashback in Simpl. Upto ₹75 Maximum cashback on a minimum purchase of ₹149.</h4>
+
+            <hr>
+            <div class="shaded">
+                <h4><u>WHAT IT IS</u></h4>
+                <h4>HOW TO USE</h4>
+                <h4>DANIEL BAUER’S TIPS</h4>
+                <h4>WHAT'S IN IT</h4>
+                <h4>FAQS</h4>
+
+            </div>
+            <h4>Is it hot in here or are you wearing this deep classic red? It is also PETA Approved cruelty- <br>free
+                and vegan.</h4>
+            <h4>
+                You found The One! Trust us, ladies, this liquid matte lipstick will be your new love! The LIT <br>
+                Liquid Matte Lipstick by MyGlamm gives you soft, kiss-proof lips, no smudges or transfers, <br>
+                just pure, intense colour! Best of all, its enriched with Moringa Oil that moisturises and<br> smoothens
+                dry, damaged lips.
+            </h4>
+
+
+            <h3>Give it to me quick</h3>
+
+            <ul class="b">
+                <li>Matte finish</li>
+                <li>Smudge-proof, transfer-proof formula</li>
+                <li>Lasts for upto 12 hours</li>
+                <li>Smooth, opaque application</li>
+                <li>Highly pigmented</li>
+                <li>Vegan-friendly</li>
+            </ul>
+
+
+            <h3>Benefits</h3>
+            <ul class="b">
+                <li>Enriched with moringa oil that moisturises your lips, keeping them soft and supple</li>
+                <li>Long-lasting, up to 12 hours</li>
+                <li>Cruelty-free, not tested on animals</li>
+
+            </ul>
+            <p>The LIT Collection by MyGlamm features statement-making, cruelty-free makeup, and is tried <br>
+                and tested on our favourite human, Sidharth Malhotra.</p>
+
+
+            <h4>Net Weight: 3 ml</h4>
+            <h4>Manufacturer Detail</h4>
+            <h4>VIVA Cosmetics, C1/1 to 6, Radheshyam Indl. Complex, Asangaon, Shahapur, Thane- 421 601 <br>
+                M.L.No.:MKD/C/265.</h4>
+            Country of Origin - <b>India</b>
+            <p>Disclaimer: The lipstick swatch is for reference purposes only and may slightly vary from the <br>
+                colour of the bottle. Colours of the makeup may vary due to the differences in computer<br>
+                monitors and phone screens</p>
+            <p>Important: All products that will be shipped will have a shelf-life of minimum 8 months to 12<br>
+                months</p>
+            <hr>
+            <h3>Review this product</h3>
+            <p>Share your thoughts with everyone</p>
+            <button class="bag">WRITE A REVIEW</button>
+            <hr>
+            <h3>CUSTOMER QUESTIONS</h3>
+
+            <div class="shaded">
+                <img width="55px" src="https://s3.ap-south-1.amazonaws.com/files.myglamm.com/original/group6%403x.png">
+                <h4>TREEPTI <br>
+                </h4>
+
+
+            </div>
+            <h5 class="date">27 Mar, 2021 at 04:53 PM</h5>
+            <h4>what abt long lasting?</h4>
+            <hr>
+            <h4>Answer</h4>
+            <div class="shaded">
+                <img width="55px" src="https://www.myglamm.com/images/myGlamm-icon.png">
+                <h4>MyGlamm <br>
+                </h4>
+
+            </div>
+
+            <h5 class="date">27 Mar, 2021 at 04:53 PM</h5>
+            <h4>The Lit Liquid Matte Lipsticks are Long-lasting, up to 12 hours</h4>
+
+            <hr>
+            <div class="shaded">
+                <img width="55px" src="https://s3.ap-south-1.amazonaws.com/files.myglamm.com/original/group6%403x.png">
+                <h4>Rakib <br>
+                </h4>
+
+
+            </div>
+            <h5 class="date">07 Mar, 2021 at 05:54 PM</h5>
+            <h4>Is there return policy or period?</h4>
+            <hr>
+
+            <h4>Answer</h4>
+            <div class="shaded">
+                <img width="55px" src="https://www.myglamm.com/images/myGlamm-icon.png">
+                <h4>MyGlamm <br>
+                </h4>
+
+            </div>
+
+            <h5 class="date">16 Apr, 2021 at 05:44 PM</h5>
+            <h4>Our products cannot be returned or exchanged except if you have received an item in a <br>
+                damaged/defective condition or have been sent a wrong product.</h4>
+            <hr>
+
+            <div class="shaded">
+                <img width="55px" src="https://s3.ap-south-1.amazonaws.com/files.myglamm.com/original/group6%403x.png">
+                <h4>Shalvi Singh <br>
+                </h4>
+
+
+            </div>
+            <h5 class="date">20 Feb, 2021 at 06:24 PM</h5>
+            <h4>Does Miglam Lipstick contain any dangerous chemicals?</h4>
+            <hr>
+            <h4>Answer</h4>
+            <div class="shaded">
+                <img width="55px" src="https://www.myglamm.com/images/myGlamm-icon.png">
+                <h4>MyGlamm <br>
+                </h4>
+
+            </div>
+
+            <h5 class="date">19 Apr, 2021 at 12:50 PM</h5>
+            <h4>The LIT liquid lipstick is completely cruelty free and paraben free and doesn't contain any dangerous
+                chemicals.</h4>
+            <hr>
+        </div>
+
+    </div>
+
+    <div id="symbol">
+        <div> <img height="28px" width="27px"
+                src="https://tse1.mm.bing.net/th?id=OIP.qAvEb6dwa1l715giSS_qBAHaHa&pid=Api&P=0&w=300&h=300"> </div>
+        <div> <img height="32px" width="27px"
+                src="https://tse4.mm.bing.net/th?id=OIP.Bcij2gzfw62qTm3QR_KzjwHaHa&pid=Api&P=0&w=300&h=300"> </div>
+        <div> <img height="32px" width="27px"
+                src="https://tse3.mm.bing.net/th?id=OIP.De41xpEYh9rUP4MxURVj1gHaHa&pid=Api&P=0&w=300&h=300"> </div>
+    </div>
+
+    <hr>
+    <div id="watch">WATCH & LEARN</div>
+    <div id="vidCon">
+        <div id="video"><iframe id="vid_container" class="iframe-video" src="https://www.youtube.com/embed/04EALbdV8cI"
+                frameborder="0" allow="autoplay" allowfullscreen=""
+                style="width: 530px; height: 426px; margin-left: 220px; margin-top: 20px;"></iframe></div>
+        <div id="content">
+            <p id="hd">MYGLAMM LIT LIQUID MATTE</p>
+            <p id="txt">Introducing the all-new 100 shades of LIT Liquid Matte Lipstick. A shade for every style, a
+                colour for every smile. It is gonna be LIT! . Enriched with moringa oil that moisturises your lips,
+                smoothes dry, damaged lips keeping them soft and supple. The LIT Liquid Matte Lipstick by MyGlamm gives
+                you kiss-proof lips, no smudges or transfers and an intense colour that lasts up to 12 hours. Trust us,
+                ladies, this highly pigmented liquid matte lipstick will be your new love!
+                ------------------------------------------------------------------------------------------------------------------------
+                Visit The Website - https://bit.ly/2WcrCFW Click here for Attractive Offers - https://bit.ly/3gO4C8a
+                ------------------------------------------------------------------------------------------------------------------------
+                Download the MyGlamm app here: Android: https://bit.ly/309O1VA IOS: https://apple.co/32diu87
+                ------------------------------------------------------------------------------------------------------------------------
+                Like Our Page for Daily Dose of Beauty. Facebook: https://bit.ly/3j8k9BU Instagram:
+                https://bit.ly/304mV2i Twitter: https://bit.ly/2C5MLeh</p>
+        </div>
+    </div>
+    <div id="images">
+        <div><img width="284px" height="172px" src="https://i.ytimg.com/vi/04EALbdV8cI/hqdefault.jpg"></div>
+        <div class="change" id="img1"><img width="284px" height="166px"
+                src="https://i.ytimg.com/vi/W3NWSEaiIhE/hqdefault.jpg"></div>
+        <div class="change" id="img2"><img width="284px" height="166px"
+                src="https://i.ytimg.com/vi/exnRLtgQ3l0/hqdefault.jpg"></div>
+    </div>
+    <!-- 
+<hr>
+
+<p id="fh">FREQUENTLY BOUGHT TOGETHER</p>
+<div id="combination">
+    <div></div>
+    <div></div>
+    <div></div>
+</div> -->
+</body>
+
+</html>
+
+
+
+<script src="hairProduct.js"></script>

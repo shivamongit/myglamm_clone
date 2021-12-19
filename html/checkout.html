@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar">
+
+        </div>
+    </header>
+
+    <main id="main_div">
+        <div id="heading"></div>
+        <div class="container">
+
+            <div id="header"></div>
+            <div class="checkout-text">
+                <p>Checkout</p>
+            </div>
+
+            <div class="main-div">
+                <div class="adresdetl">
+                    <div class="sign-in">
+                        <p>Already have an Account?</p>
+                        <button id="signIn"
+                            style="width: 100px; padding:10px; padding-bottom: 25px; margin-top: 10px; font-weight: 600; border-radius: 2px; cursor: pointer;">SIGN
+                            IN</button>
+                    </div>
+                    <h3 style="font-family: sans-serif; font-size: 15px; font-weight: 600;"><span>OR</span></h3>
+                    <p
+                        style="text-align: center; font-size: 14px; font-family: sans-serif; margin-left: 20px;font-weight: 600;margin-bottom: 25px;">
+                        Checkout Without sign in</p>
+                    <div class="form" style="width: 100%;">
+                        <form action="">
+                            <input type="text" style="margin-left:18px; height: 30px; text-align: center;"
+                                placeholder="Your name..">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="number" style="height: 30px; margin-left: 18px; text-align: center;"
+                                placeholder="Mobile number..">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="text" style="margin-left: 18px;height: 30px; text-align: center;"
+                                placeholder="Email..">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="pin-city-state">
+                                <input type="number"
+                                    style="width: 24.5%; height: 30px;margin-left: 18px; text-align: center;"
+                                    placeholder="Pin code.."> &nbsp; &nbsp;
+
+                                <input type="text" style="width: 24.5%; text-align: center;" placeholder="City..">
+                                &nbsp; &nbsp;
+
+                                <input type="text" style="width: 24.5%; text-align: center;" placeholder="State..">
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <textarea style="width: 80%; text-align: center; margin-left: 18px;" name="" id="" cols="70"
+                                rows="4" placeholder="Address.."></textarea>
+                            <br>
+                            <br>
+                            <br>
+                            <textarea style="width: 40%; text-align: center; margin-left: 18px;"
+                                placeholder="LANDMARK"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="promomain">
+                    <h3 style="font-size: 14px; font-weight: 700; font-family: sans-serif;margin-left: 50px;">Apply
+                        Promo Code</h3>
+                    <div class="promocodein">
+                        <input type="text" placeholder="APPLY CODE" id="promo-code">
+                        <button class="promo-btn" onclick="check()">APPLY</button>
+                    </div>
+                    <p style="text-align: left; margin-left: 60px; font-size: large;font-weight: bold;">Order Summary
+                    </p>
+                    <div id="actual-amount">
+                        <p style="margin-left: 10%;">Actual amount</p>
+                        <p id="gtotal"></p>
+                    </div>
+                    <div class="shipping-charges">
+                        <p style="margin-left: 10%;">Shipping charges </p>
+                        <p>FREE</p>
+                    </div>
+                    <div class="discount">
+                        <p style="margin-left: 10%;">Discount</p>
+                        <p style="margin-left: 19%;" id="percentDiscount"></p>
+                    </div>
+                    <div class="amount-to-pay">
+                        <p style="margin-left: 10%; font-size: large;font-weight: bold;">Amount to Pay</p>
+                        <p id="amount"></p>
+                    </div>
+                    <div class="proceed-to-pay-btn">
+                        <button onclick="window.location.href='payment.html'"
+                            style="width:60%;height:50px;cursor: pointer ; margin-left: 20%; background-color: black; color: white; font-size: medium; border-radius: 2px; margin-top: 25px;">PROCEED
+                            TO PAYMENT →</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <p id="orderText">Your Order</p>
+    <div id="myOrder">
+        <hr>
+
+        <table>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script src="checkout.js"></script>
