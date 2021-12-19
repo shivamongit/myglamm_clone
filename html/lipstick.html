@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lipstic.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+ 
+<div id="hm">
+    <span>HOME</span>
+    <span>/</span>
+    <span>MAKEUP</span>
+    <span>/</span>
+    <span>LIP MAKEUP</span>
+    <span>/</span>
+    <span>LIPSTICK</span>
+</div>
+
+<hr> 
+
+<strong>LIPSTICK</strong>
+<div id="pink"></div>
+
+<div id="box">
+<div id="container"></div>
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+
+let data = JSON.parse(localStorage.getItem("lipstick"));
+// console.log(data);
+let mainDiv = document.getElementById("container");
+data.forEach(function (product){
+console.log(product);
+
+let div = document.createElement("div");
+div.style.border="1px solid gainsboro";
+
+let imgDiv = document.createElement("div");
+imgDiv.style.height="255px";
+imgDiv.style.width="255px";
+imgDiv.style.margin="auto";
+imgDiv.style.marginTop="20px";
+
+let img = document.createElement("img");
+img.src = product.img;
+img.setAttribute("height","255px");
+img.setAttribute("width","255px");
+
+imgDiv.append(img);
+
+let name = document.createElement("p");
+name.innerText=product.name1;
+name.setAttribute("id","name");
+
+let des = document.createElement("p");
+des.innerText = product.name2;
+des.setAttribute("id","des");
+
+let price = document.createElement("p");
+price.innerText = `₹ ${product.price}`;
+price.setAttribute("id","price");
+
+let icon = document.createElement("img");
+icon.src="https://www.myglamm.com/images/plus-icon.png";
+icon.setAttribute("id","icon");
+
+img.addEventListener("click",function(){
+    let detail = [];
+    let obj = {
+        img : product.img,
+        name : product.name1,
+        des : product.name2,
+        price : product.price,
+    };
+    detail.push(obj);
+    localStorage.setItem("Lipdetail",JSON.stringify(detail));
+    window.location.href="lipstickProduct.html";
+});
+
+let clear;
+div.addEventListener("mouseenter",function() {
+   clear = setTimeout(function() {
+        div.style.boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px";
+    },350);
+   
+    img.setAttribute("height","270px");
+    img.setAttribute("width","270px");
+});
+
+div.addEventListener("mouseleave",function() {
+
+    clearTimeout(clear);
+    div.style.boxShadow="none";
+
+    img.setAttribute("height","255px");
+    img.setAttribute("width","255px");
+});
+
+div.append(imgDiv,name,des,icon,price);
+
+mainDiv.appendChild(div);
+
+
+})
+</script>
