@@ -1,0 +1,262 @@
+ /* css for make up  */
+ #makeUppopup {
+     display: flex;
+     font-family: din-2014, sans-serif;
+     line-height: 40px;
+     justify-content: left;
+     position: fixed;
+     z-index: 5;
+     width: 90%;
+     left: 100px;
+     padding-bottom: 30px;
+     background-color: white;
+ }
+
+ #makeUppopup ul li {
+     list-style: none;
+     font-size: 21px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .a {
+     color: #ff9797;
+     font: bold;
+     padding: 0px 0px 2px;
+     font-size: 22px;
+     font-weight: 600;
+ }
+
+
+ /* css for hair care */
+ .first {
+     display: flex;
+     font-family: din-2014, sans-serif;
+     gap: 20px;
+     text-align: center;
+     position: fixed;
+     z-index: 5;
+     width: 90%;
+     left: 100px;
+     background-color: white;
+ }
+
+ .first>div:nth-child(1) {
+     text-align: left;
+     margin-top: 25px;
+ }
+
+ .first ul li {
+     list-style: none;
+     font-size: 21px;
+     line-height: 40px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .second {
+     border: 1px solid lightgrey;
+     width: 350px;
+     margin-top: 40px;
+ }
+
+ .second img {
+     width: 350px;
+ }
+
+ .second h4 {
+     font-size: 18px;
+ }
+
+ .second p {
+     font-size: 16px;
+ }
+
+ .third {
+     width: 350px;
+     margin-left: 20px;
+ }
+
+ .a {
+     color: #ff9797;
+     font: bold;
+     padding: 0px 0px 2px;
+     font-size: 22px;
+     font-weight: 600;
+ }
+
+ /* css for skin care */
+ #skincareDiv {
+
+     font-family: din-2014, sans-serif;
+     position: fixed;
+     z-index: 11;
+     width: 90%;
+     left: 100px;
+     padding-bottom: 40px;
+     background-color: white;
+ }
+
+ #skincareDiv ul li {
+     list-style: none;
+     font-size: 21px;
+     line-height: 40px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+
+ /* css for sanitizing care */
+ #sanitizer {
+     display: flex;
+     font-family: din-2014, sans-serif;
+     gap: 20px;
+
+     position: fixed;
+     z-index: 5;
+     left: 100px;
+     background-color: white;
+ }
+
+ #sanitizer ul li {
+     list-style: none;
+     font-size: 21px;
+     line-height: 40px;
+ }
+
+ #sanitizer ul {
+     width: 350px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .second {
+     border: 1px solid lightgrey;
+     width: 350px;
+     text-align: center;
+     height: 550px;
+     margin-top: 40px;
+ }
+
+ .second img {
+     width: 350px;
+ }
+
+ .second h4 {
+     font-size: 18px;
+ }
+
+ .second p {
+     font-size: 16px;
+ }
+
+ .a {
+     color: #ff9797;
+     font: bold;
+     padding: 0px 0px 2px;
+     font-size: 22px;
+     font-weight: 600;
+ }
+
+
+
+ /* css for collection */
+ #collection {
+     display: flex;
+     font-family: din-2014, sans-serif;
+     gap: 20px;
+     position: fixed;
+     z-index: 5;
+     width: 90%;
+     left: 100px;
+     background-color: white;
+
+ }
+
+ #collection ul li {
+     list-style: none;
+     font-size: 21px;
+     line-height: 40px;
+ }
+
+ #collection ul {
+     width: 950px;
+     margin: 50px 0 0 100px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .collectionFirst {
+     border: 1px solid lightgrey;
+     width: 350px;
+     text-align: center;
+     height: 550px;
+     margin-top: 30px;
+ }
+
+ .collectionFirst img {
+     width: 350px;
+ }
+
+ .shopBycollection {
+     color: #ff9797;
+     font: bold;
+     padding: 0px 0px 2px;
+     font-size: 22px;
+     font-weight: 600;
+ }
+
+
+ /* css for studio */
+
+ #studio {
+     position: fixed;
+     z-index: 5;
+     width: 90%;
+     height: 500px;
+     left: 100px;
+     background-color: white;
+ }
+
+ #studio ul li {
+     list-style: none;
+     font-size: 21px;
+     line-height: 40px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .studioA {
+     color: #ff9797;
+     font: bold;
+     padding: 0px 0px 2px;
+     font-size: 22px;
+     font-weight: 600;
+ }
+
+ #g {
+     width: 90%;
+     height: 500px;
+
+     position: fixed;
+     z-index: 5;
+     left: 100px;
+ }
