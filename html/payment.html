@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+
+
+<body>
+  <div class="header">
+    <a href="">
+      <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" alt="" />
+    </a>
+  </div>
+  <p>Payment</p>
+  <div class="body">
+    <div id="method">
+      <h6>PAYMENT METHOD</h6>
+      <div onclick="">
+        <p><i class="fas fa-credit-card"></i> Credit or Debit Card</p>
+      </div>
+      <div>
+        <p><i class="fas fa-globe"></i> Net Banking</p>
+      </div>
+      <div>
+        <p>
+          <i class="fab fa-paypal"></i>
+          UPI/GPay/PhonePe
+        </p>
+      </div>
+      <div>
+        <p><i class="fas fa-wallet"></i> Wallets</p>
+      </div>
+      <div>
+        <p><i class="fas fa-money-bill"></i> Cash On Delivery</p>
+      </div>
+    </div>
+    <div id="details">
+      <div>
+        <h3>AMOUNT PAYABLE</h3>
+        <h3 id="total">Rs.3000.00</h3>
+      </div>
+      <br />
+      <h5>New Card</h5>
+      <div id="form">
+        <form action="">
+          <div>
+            <label for="Card">Card Number </label>
+            <input type="text" id="card" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16" />
+          </div>
+          <div>
+            <label for="Card Number">Cardholder's Name</label>
+            <input type="text" id="name" placeholder="eg. Shivam Shasheesh" />
+          </div>
+          <div>
+            <label for="Card Number">Validity till</label>
+            <input type="text" id="validity" placeholder="MM/YY" maxlength="5" />
+          </div>
+        </form>
+      </div>
+      <div id="pay">
+        <h4>PROCEED TO PAY</h4>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div id="bottom">
+    <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" alt="" />
+  </div>
+</body>
+
+</html>
+<script src="payment.js"></script>
