@@ -1,0 +1,275 @@
+#mid {
+    background-color: #f4f4f4;
+
+}
+
+.topSellersProductList {
+    display: flex;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 8px 0 rgb(216, 198, 198);
+    padding: 1rem 1rem 0;
+}
+
+.topSellerProduct {
+
+    width: 1490px;
+    transform: translate3d(0px, 0px, 0px);
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.topSellerproductDetail {
+    margin-top: 2.3rem;
+    text-align: center;
+    padding: 1.8rem 0;
+    width: 405px;
+    background-color: white;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto auto 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+.priceDetail {
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 600;
+}
+
+.h3 {
+    margin: auto;
+    font-weight: 600;
+    width: max-content;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 5px;
+    background: linear-gradient(180deg, transparent 60%, #ff9797 30px);
+    font-size: 31px;
+}
+
+.first {
+    display: flex;
+    gap: 10px;
+}
+
+.firstDiv {
+    margin-left: 180px;
+}
+
+.firstDiv img {
+    width: 500px;
+}
+
+.secondDiv {
+    margin-left: 80px;
+}
+
+.secondDiv img {
+    width: 500px;
+}
+
+.thirdDiv img {
+    width: 1400px;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.fourthDiv {
+    display: flex;
+    gap: 80px;
+}
+
+.fourthFirst {
+    margin-left: 250px;
+}
+
+.fourthFirst img {
+    margin-bottom: 10px;
+}
+
+.fourthFirst h3 {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.fourthSecond img {
+    margin-bottom: 10px;
+}
+
+.fifthDiv img {
+    width: 1400px;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.sixDiv {
+    display: flex;
+    margin-top: 80px;
+}
+
+.sixFirst {
+    margin-left: 180px;
+}
+
+.sixFirst img {
+    width: 500px;
+}
+
+.sixSecond {
+    margin-left: 80px;
+}
+
+.sixSecond img {
+    width: 500px;
+}
+
+.sevenDiv {
+    display: flex;
+    gap: 350px;
+    margin-bottom: 30px;
+}
+
+.sevenFisrt {
+    margin-left: 180px;
+    font-size: 25px;
+}
+
+.sevenSecond {
+    font-size: 18px;
+    width: 350px;
+}
+
+.sevenThird {
+    font-size: 18px;
+}
+
+.eight {
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.eightImg1 {
+    margin-left: 200px;
+    width: 800px;
+}
+
+.eightImg2 {
+    width: 800px;
+}
+
+.nine {
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.nine img {
+    width: 1500px;
+}
+
+.ten {
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.ten img {
+    width: 1500px;
+}
+
+#heading {
+    margin-top: 250px;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 600px;
+
+}
+
+.carousel-cell img {
+    width: 100%;
+    display: block;
+}
+
+.flickity-button {
+    background: white;
+    width: 60px;
+    height: 60px;
+}
+
+.flickity-button:hover {
+    background: rgb(179, 117, 26);
+}
+
+.flickity-button-icon {
+    fill: black;
+}
+
+.flickity-prev-next-button.previous {
+    left: 40px;
+}
+
+.flickity-prev-next-button.next {
+    right: 40px;
+}
+
+.flickity-page-dots {
+    bottom: 10px;
+
+}
+
+/* css for video */
+#video-container {
+    width: 100%;
+    margin: 50px auto;
+}
+
+#video {
+    width: 100%;
+
+}
+
+/* css for best sellers */
+#bestSellers .main-carousel {
+    width: 95%;
+    margin: auto;
+
+}
+
+#bestSellers .carousel-cell {
+    width: 20%;
+    height: 550px;
+    margin-right: 10px;
+    text-align: center;
+    margin: 3%;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#bestSellers .carousel-cell img {
+    width: 100%;
+}
+
+
+/* css for permanent logo */
+#permanentLogo>div {
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 10;
+
+
+}
+
+#permanentLogo>div img {
+    width: 100%;
+    border-radius: 50%;
+}
