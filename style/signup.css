@@ -1,0 +1,134 @@
+#main {
+
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    max-width: 500px;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 5%;
+}
+
+.x {
+    font-size: 20px;
+    margin-left: 95%;
+
+}
+
+.txt {
+    margin-left: 25%;
+}
+
+.img {
+    margin-left: 22%;
+
+}
+
+img {
+    width: 280px;
+    height: 60px;
+}
+
+.mob>a {
+    color: black;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 17%;
+
+}
+
+.mob {
+    margin-top: 5%;
+    border-bottom: 1px solid rgb(240, 228, 228);
+
+}
+
+.code {
+    margin-left: 5%;
+
+}
+
+.select {
+    width: 100px;
+
+    height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.tt {
+    display: flex;
+
+}
+
+.no {
+    margin-left: 15%;
+}
+
+form {
+    display: flex;
+
+
+}
+
+.ne {
+    margin-left: 15%;
+}
+
+form div>input {
+    padding: 10px;
+    width: 250px;
+
+
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 0;
+    width: 400px;
+    color: white;
+    height: 50px;
+    padding: 14px;
+
+}
+
+.btn {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.wd {
+    margin-left: 40%;
+}
+
+.bt {
+    display: flex;
+}
+
+button>img {
+    width: 2px;
+}
+
+.last {
+    margin-top: 10%;
+    margin-left: 15%;
+
+}
+
+label {
+    font-size: 13px;
+}
+
+.tt {
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+}
