@@ -1,0 +1,183 @@
+.container {
+    margin-top: 8%;
+
+}
+
+.adresdetl {
+    width: 50%;
+}
+
+.promomain {
+    width: 35%;
+    height: 450px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.promomain p {
+    margin-left: 59px;
+    font-size: large;
+    font-weight: 400;
+
+}
+
+.checkout-text p {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: -90px;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.sign-in {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sign-in button {
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.adresdetl h3 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 20px 0px 20px 20px;
+}
+
+.adresdetl h3 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.form input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.promocodein {
+    margin-left: 10%;
+}
+
+.promocodein input,
+button {
+    width: 250px;
+    height: 30px;
+}
+
+.promocodein button {
+    width: 150px;
+    height: 34px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+#actual-amount {
+    display: flex;
+    gap: 36%;
+}
+
+#actual-amount p:nth-child(1) {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.shipping-charges {
+    display: flex;
+    gap: 36%;
+}
+
+.shipping-charges p:nth-child(1) {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.shipping-charges p:nth-child(2) {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.discount {
+    display: flex;
+    gap: 38%;
+}
+
+.discount p:nth-child(1) {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.discount p:nth-child(2) {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.amount-to-pay {
+    display: flex;
+    gap: 32%;
+}
+
+.amount-to-pay p:nth-child(1) {
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.amount-to-pay p:nth-child(2) {
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.pin-city-state {
+    display: flex;
+}
+
+.form input {
+    color: rgb(138, 91, 91) !important;
+}
+
+#orderText {
+    margin-left: 140px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#myOrder {
+    width: 640px;
+    height: 600px;
+    /* border: 1px solid red; */
+    margin-left: 140px;
+}
+
+#gtotal {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
